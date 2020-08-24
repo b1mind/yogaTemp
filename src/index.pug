@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+		link(rel="stylesheet", href="scss/style.scss")
+		link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css', rel='stylesheet', type='text/css')
+		script(defer src="https://use.fontawesome.com/991e61a5a1.js")
+		script(defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js")
+		script(defer src="js/main.js")
+		title Change ME!
+
+	body
+		header
+			.wrap.flex
+				h3 Yoga
+				nav
+					ul.navMain
+						li item1
+						li item2
+						li item3
+						li item4
+						i.fas.fa-paper-plane
+						i.fas.fa-shopping-cart
+						i.fas.fa-user
+
+		main
+			.hero.wrap
+				.hero-text
+					h1 #yOGA
+					p let your body speak to you
+					a.btn() Join Today
+				.hero-img
+					img(src="https://picsum.photos/800/600?random=0", alt="Yoga Hero")
+
+		section.about.wrap
+			h2 About Us
+			.flex
+				.about-img
+					img(src="https://picsum.photos/400/600?random=1", alt="Body Yoga")
+				.about-text
+					h3 Body Yoga
+					p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ea repellat nobis voluptas animi consequatur similique expedita recusandae quia! Officiis adipisci aut nisi quibusdam, excepturi veniam a! Ut, voluptate praesentium.
+
+		section.features
+			.wrap.grid
+				-let a = 6
+				while a > 0
+					.cell
+						i.fas.fa-peace
+						h4 Some temp header needs to be long.
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias ea eius sed. Voluptatibus, inventore molestias nam necessitatibus sequi id hic explicabo aperiam nobis. Cumque veritatis rem nulla distinctio vero.
+						-a--
+
+		section.classes
+			.wrap.flex
+				//todo make more or use loop 
+				-let b = 3
+				while b > 0
+					.card
+						img(src="https://picsum.photos/300/300?random="+b, alt="")
+						h3 a class
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tempora minima, exercitationem placeat enim distinctio, repellendus eum rerum mollitia quo blanditiis dolorem debitis nesciunt. Nulla repellat ad sint possimus odio?
+						.price
+							h3.span 300$
+							button.btn Buy Now
+						-b--
+
+		section.meetings
+			.wrap
+				h2 Group Meetings
+				.flex
+					img(src="", alt="meetings")
+					.meetings-text
+						h3 Join us for meetings
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia sed necessitatibus, ullam provident laboriosam a voluptatem mollitia maxime quibusdam dolore voluptatum sit nemo perspiciatis fugit odit, cum quisquam aspernatur?
+						button.btn Sign Up
+				
