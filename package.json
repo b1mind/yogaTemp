@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Pug-Scss-Parcel template by 1mind",
 	"author": "b1Mind",
-	"main": "/dist/index.pug",
+	"main": "/dist/index",
 	"source": "/src/index.pug",
 	"scripts": {
 		"dev": "parcel serve src/*.pug --no-cache --no-source-maps --port 9001 -d ./dist/dev/",
@@ -17,6 +17,7 @@
 		"parcel-bundler": "^1.12.4",
 		"parcel-plugin-static-files-copy": "^2.5.0",
 		"postcss": "^7.0.32",
+		"postcss-combine-media-query": "^1.0.1",
 		"pug": "^3.0.0"
 	},
 	"dependencies": {
