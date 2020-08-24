@@ -25,7 +25,8 @@ body {
 	background: grey;
 }
 
-a {
+a,
+.btn {
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -45,6 +46,9 @@ ul {
 .wrap {
 	max-width: 1199px;
 	margin: 0 auto;
+	@media (max-width: $minWidthSml) {
+		padding: 1rem;
+	}
 }
 
 .center {
@@ -66,6 +70,9 @@ ul {
 }
 
 .navMain {
+	@media (max-width: $minWidthSml) {
+		padding: 1rem;
+	}
 	li {
 		padding: 1em;
 		display: inline-block;

@@ -37,8 +37,7 @@ html(lang="en")
 		section.about.wrap
 			h2 About Us
 			.flex
-				.about-img
-					img(src="https://picsum.photos/400/600?random=1", alt="Body Yoga")
+				img(src="https://picsum.photos/400/600?random=1", alt="Body Yoga")
 				.about-text
 					h3 Body Yoga
 					p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ea repellat nobis voluptas animi consequatur similique expedita recusandae quia! Officiis adipisci aut nisi quibusdam, excepturi veniam a! Ut, voluptate praesentium.
@@ -48,32 +47,50 @@ html(lang="en")
 				-let a = 6
 				while a > 0
 					.cell
-						i.fas.fa-peace
+						img(src="../static/images/feature"+a+".svg" alt="yoga pose"+a)
 						h4 Some temp header needs to be long.
 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias ea eius sed. Voluptatibus, inventore molestias nam necessitatibus sequi id hic explicabo aperiam nobis. Cumque veritatis rem nulla distinctio vero.
 						-a--
 
 		section.classes
-			.wrap.flex
-				//todo make more or use loop 
-				-let b = 3
-				while b > 0
-					.card
-						img(src="https://picsum.photos/300/300?random="+b, alt="")
-						h3 a class
-						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tempora minima, exercitationem placeat enim distinctio, repellendus eum rerum mollitia quo blanditiis dolorem debitis nesciunt. Nulla repellat ad sint possimus odio?
-						.price
-							h3.span 300$
-							button.btn Buy Now
-						-b--
+			.wrap
+				h2 Advanced Classes
+				.flex
+					//todo make more or use loop 
+					-let b = 3
+					while b > 0
+						.card
+							img(src="https://picsum.photos/300/175?random="+b, alt="")
+							h3 a class
+							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tempora minima, exercitationem placeat enim distinctio, repellendus eum rerum mollitia quo blanditiis dolorem debitis nesciunt. Nulla repellat ad sint possimus odio?
+							.price
+								h3.span 300$
+								button.btn Buy Now
+							-b--
 
 		section.meetings
 			.wrap
 				h2 Group Meetings
 				.flex
-					img(src="", alt="meetings")
+					img(src="https://picsum.photos/400/600?random=3", alt="meetings")
 					.meetings-text
 						h3 Join us for meetings
 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia sed necessitatibus, ullam provident laboriosam a voluptatem mollitia maxime quibusdam dolore voluptatum sit nemo perspiciatis fugit odit, cum quisquam aspernatur?
 						button.btn Sign Up
-				
+
+		section.tours
+			.wrap
+				h2 Yoga - Tours
+				.flex
+					.tours-text
+						h3 Tour to Bali
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore autem velit ducimus, eaque commodi in, cupiditate minima atque veritatis alias nesciunt nobis minus corrupti recusandae possimus nihil veniam accusantium quos!
+						h3.span 1500 $
+						button.btn Book
+					img(src="https://picsum.photos/450/350?random=8")
+
+		section.footer
+			footer.flex
+				h3 some copyright stuffs 2020
+				h3 more stuffs
+
