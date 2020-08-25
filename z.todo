@@ -11,3 +11,4 @@ Todo:
 Future:
   ☐ upgrade to Parcel2
   ☐ get postcss-combine-media-query working
+  ☐ get public static copy working
