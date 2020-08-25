@@ -59,13 +59,13 @@ html(lang="en")
 
 		section.classes
 			.wrap
-				h2 Advanced Classes
+				h2.center Advanced Classes
 				.flex
 					-let b = 3
 					while b > 0
 						.card
 							img(src="https://picsum.photos/300/175?random="+b, alt="")
-							h4 a class
+							h4 a class type
 							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tempora minima, exercitationem placeat enim distinctio, repellendus eum rerum mollitia quo blanditiis dolorem debitis nesciunt. Nulla repellat ad sint possimus odio?
 							.price
 								h4.span 300$
@@ -74,9 +74,10 @@ html(lang="en")
 
 		section.meetings
 			.wrap
-				h2 Group Meetings
+				h2.center Group Meetings
 				.flex
-					img(src="https://picsum.photos/400/600?random=3", alt="meetings")
+					.meetings-img
+						img(src="https://picsum.photos/350/450?random=3", alt="meetings")
 					.meetings-text
 						h3 Join us for meetings
 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia sed necessitatibus, ullam provident laboriosam a voluptatem mollitia maxime quibusdam dolore voluptatum sit nemo perspiciatis fugit odit, cum quisquam aspernatur?
@@ -85,14 +86,15 @@ html(lang="en")
 
 		section.tours
 			.wrap
-				h2 Yoga - Tours
+				h2.center  Yoga - Tours
 				.flex
 					.tours-text
 						h3 Tour to Bali
 						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore autem velit ducimus, eaque commodi in, cupiditate minima atque veritatis alias nesciunt nobis minus corrupti recusandae possimus nihil veniam accusantium quos!
 						h4.span 1500$
 						button.btn Book
-					img(src="https://picsum.photos/450/350?random=8")
+					.tours-img
+						img(src="https://picsum.photos/450/350?random=8")
 
 		.footer
 			footer.wrap.flex

@@ -184,3 +184,54 @@ main {
 		border-radius: 99px;
 	}
 }
+
+.classes {
+	.card {
+		margin: 50px 0.5rem 0 0.5rem;
+		padding: 1rem;
+		text-align: center;
+		background: var(--clr);
+		border-radius: 0 10px 0 10px;
+		img {
+			margin-bottom: -50px;
+			border: 10px solid var(--clr-white);
+			border-radius: 20px 0 15px 0;
+			transform: translateY(-50px);
+		}
+	}
+}
+
+.meetings {
+	&-img {
+		margin: 50px 50px 0 0;
+		background: var(--clr-secondary);
+		border-radius: 5px 0 5px 20px;
+		img {
+			transform: translate(50px, -50px);
+			border: 10px solid var(--clr-white);
+			border-radius: 10px 30px 10px 20px;
+		}
+	}
+	&-text {
+		max-width: 40%;
+		align-self: center;
+	}
+}
+
+.tours {
+	&-img {
+		margin: 0 0 50px 50px;
+		background: var(--clr);
+		border-radius: 5px 0 5px 20px;
+		img {
+			transform: translate(-50px, 50px);
+			border: 10px solid var(--clr-white);
+			border-radius: 10px 30px 10px 20px;
+		}
+	}
+
+	&-text {
+		max-width: 40%;
+		align-self: center;
+	}
+}
