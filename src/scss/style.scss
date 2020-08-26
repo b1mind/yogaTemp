@@ -1,14 +1,17 @@
 //- //< Sassy settings
-$minWidthLg: 1199px;
-$minWidthMed: 800px;
+$minWidthLg: 1250px;
+$minWidthMed: 920px;
 $minWidthSml: 600px;
 //- //>Base settings
 :root {
 	--clr: #f3e4ff;
 	--clr-dark: #deaaff;
-	--clr-secondary: #e4feff;
+	--clr-secondary: #cbfcfd;
+	--clr-secondary-dark: #00d6dd;
 	--clr-white: white;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap');
 
 *,
 *::before,
@@ -24,13 +27,8 @@ body {
 	height: 100%;
 	min-height: 100%;
 	margin: 0;
+	font-family: 'Montserrat', sans-serif;
 	background: var(--clr-white);
-}
-
-a,
-.btn {
-	text-decoration: none;
-	cursor: pointer;
 }
 
 img {
@@ -38,7 +36,61 @@ img {
 }
 
 ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+h1,
+h2 {
+	font-family: 'Courgette', cursive;
+}
+
+h1 {
+	margin-top: 0;
+	color: var(--clr-dark);
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-weight: 900;
+}
+
+p {
+	margin: 0 auto;
+	max-width: 40ch;
+	line-height: 1.5rem;
+}
+
+a,
+.btn {
+	margin: auto 1rem;
+	padding: 0.35rem 0.85rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-decoration: none;
+	border: 2px solid var(--clr-dark);
+	border-radius: 7px;
+	background: var(--clr);
+	// outline: transparent;
+	cursor: pointer;
+	&:hover,
+	:active {
+		border: 2px solid black;
+		background: var(--clr-secondary);
+	}
+	&-secondary {
+		@extend .btn;
+		background: var(--clr-secondary);
+	}
+	&-light {
+		@extend .btn;
+		background: var(--clr-white);
+	}
 }
 
 .span {
@@ -69,13 +121,22 @@ ul {
 .flex {
 	display: flex;
 	justify-content: space-between;
-	@media (max-width: $minWidthMed) {
+	@media (max-width: $minWidthLg) {
 		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	@media (max-width: $minWidthSml) {
+		justify-content: center;
 	}
 }
 
 header {
 	background: var(--clr);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
 }
 
 .navMain {
@@ -91,6 +152,7 @@ header {
 .hero {
 	position: relative;
 	min-height: 700px;
+	margin: 0 0 200px 0;
 	padding-top: 3rem;
 	background: var(--clr);
 	z-index: 0;
@@ -106,16 +168,17 @@ header {
 	}
 
 	&-text {
-		width: 40%;
+		max-width: 40%;
+		margin: 2rem 1rem 2rem 0rem;
 		align-self: center;
-		h1 {
-			margin-top: 0;
-			color: var(--clr-dark);
-			font-size: 5rem;
+		@media (max-width: $minWidthMed) {
+			max-width: 100%;
 		}
+
 		p {
 			position: relative;
 			max-width: 20ch;
+			margin: 0 0 2rem 0;
 			padding-left: 15px;
 			font-size: 2rem;
 			border-left: 4px solid var(--clr-dark);
@@ -126,9 +189,6 @@ header {
 		border: 15px solid var(--clr-white);
 		border-radius: 600px;
 		transform: translateY(50px);
-		@media (max-width: $minWidthMed) {
-			// transform: translateY(50px);
-		}
 		img {
 			border-radius: 600px;
 		}
@@ -144,6 +204,9 @@ main {
 .about {
 	.flex {
 		justify-content: start;
+		@media (max-width: $minWidthMed) {
+			justify-content: center;
+		}
 	}
 
 	&-box {
@@ -159,10 +222,21 @@ main {
 	}
 
 	&-text {
-		max-width: 70ch;
 		padding: 3rem;
 		margin-top: -100px;
 		align-self: center;
+		h3 {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -0.5rem;
+				width: 110px;
+				height: 3px;
+				background: var(--clr-secondary-dark);
+			}
+		}
 	}
 }
 
@@ -172,6 +246,7 @@ main {
 		p {
 			// max-width: 60ch;
 			font-size: large;
+			// text-align: start;
 		}
 	}
 
@@ -199,6 +274,21 @@ main {
 			border-radius: 20px 0 15px 0;
 			transform: translateY(-50px);
 		}
+		h3 {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 35%;
+				bottom: -0.5rem;
+				width: 110px;
+				height: 3px;
+				background: var(--clr-secondary-dark);
+			}
+		}
+	}
+	.price {
+		text-align: end;
 	}
 }
 
@@ -214,8 +304,20 @@ main {
 		}
 	}
 	&-text {
-		max-width: 40%;
+		margin: 1rem;
 		align-self: center;
+		p {
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: -30px;
+				left: -15px;
+				width: 5px;
+				height: 135px;
+				background: var(--clr-secondary);
+			}
+		}
 	}
 }
 
@@ -232,7 +334,13 @@ main {
 	}
 
 	&-text {
-		max-width: 40%;
-		align-self: center;
+		@extend .meetings-text;
+		p::after {
+			background: var(--clr);
+		}
 	}
+}
+
+.footer {
+	color: var(--clr-dark);
 }
