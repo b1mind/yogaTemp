@@ -1,21 +1,20 @@
-Todo:
-  ✔ complete html bones @done(20-08-24 19:07)
-  ✔ make svg images @done(20-08-24 19:05)
-  ✔ Start styles @done(20-08-25 03:55)
-  ✔ finish styles @done(20-08-26 00:37)
-    ✔ buttons @done(20-08-25 21:50)
-    ✔ fonts and headers @done(20-08-25 21:50)
-    ✔ mobile button @done(20-08-26 00:37)
 Improve:
-  ✔ about us responsive Lg-Med @done(20-08-26 00:37)
-  ☐ find some images to replace randoms
-  ☐ better btn hover/actives
+  ☐ find some images to replace randoms @20m
+  ☐ better btn hover/actives @1h
   ☐ fonts weights/sizes
-  ✔ full mobile menu @done(20-08-26 01:38)
   ☐ better main nav hover/styles
-  ☐ extra pseudo styles
+  ☐ extra pseudo styles 
 Wishlist:
   ☐ animations
+  ☐ ReadMe.md
   ☐ logo based on OGA or OGB
   ☐ favicon
-  ☐ ReadMe.md
+Archive:
+  ✔ complete html bones @done(20-08-24 19:07) @project(Todo)
+  ✔ make svg images @done(20-08-24 19:05) @project(Todo)
+  ✔ Start styles @done(20-08-25 03:55) @project(Todo)
+  ✔ fonts and headers @done(20-08-25 21:50) @project(Todo)
+  ✔ finish styles @done(20-08-26 00:37) @project(Todo)
+  ✔ buttons @done(20-08-25 21:50) @project(Todo)
+  ✔ mobile button @done(20-08-26 00:37) @project(Todo)
+  ✔ full mobile menu @done(20-08-26 01:38) @project(Improve)
