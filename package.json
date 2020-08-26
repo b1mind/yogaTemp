@@ -25,6 +25,7 @@
 	},
 	"postcss": {
 		"plugins": {
+			"postcss-combine-media-query": {},
 			"autoprefixer": {
 				"grid": "autoplace",
 				"overrideBrowserslist": [
