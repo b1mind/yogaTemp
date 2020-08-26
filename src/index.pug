@@ -15,7 +15,11 @@ html(lang="en")
 		header
 			nav.wrap
 				h3 Yoga
-				ul.navMain
+				ul.canHazBurger
+					li
+					li
+					li
+				ul.navMain.hidden
 					li item1
 					li item2
 					li item3
@@ -82,8 +86,9 @@ html(lang="en")
 					.meetings-text
 						h3 Join us for meetings
 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia sed necessitatibus, ullam provident laboriosam a voluptatem mollitia maxime quibusdam dolore voluptatum sit nemo perspiciatis fugit odit, cum quisquam aspernatur?
-						h4.span 800$
-						button.btn Sign Up
+						.price
+							h4.span 800$
+							button.btn Sign Up
 
 		section.tours
 			.wrap
@@ -92,8 +97,9 @@ html(lang="en")
 					.tours-text
 						h3 Tour to Bali
 						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore autem velit ducimus, eaque commodi in, cupiditate minima atque veritatis alias nesciunt nobis minus corrupti recusandae possimus nihil veniam accusantium quos!
-						h4.span 1500$
-						button.btn Book Trip
+						.price
+							h4.span 1500$
+							button.btn Book Trip
 					.tours-img
 						img(src="https://picsum.photos/450/350?random=8")
 
