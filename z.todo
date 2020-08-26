@@ -2,13 +2,18 @@ Todo:
   ✔ complete html bones @done(20-08-24 19:07)
   ✔ make svg images @done(20-08-24 19:05)
   ✔ Start styles @done(20-08-25 03:55)
-  ☐ find some images to replace randoms
   ☐ finish styles
-    ☐ buttons
-    ☐ fonts and headers
-    ☐ extras
-    ☐ mobile menu
-Future:
-  ☐ upgrade to Parcel2
-  ☐ get postcss-combine-media-query working
-  ☐ get public static copy working
+    ✔ buttons @done(20-08-25 21:50)
+    ✔ fonts and headers @done(20-08-25 21:50)
+    ☐ mobile button
+  ☐ find some images to replace randoms
+Improve:
+  ☐ about us responsive Lg-Med
+  ☐ better btn hover/actives
+  ☐ fonts weights/sizes
+  ☐ full mobile menu
+  ☐ extra pseudo styles
+Wishlist:
+  ☐ animations
+  ☐ logo based on OGA or OGB
+  ☐ favicon
